@@ -1,0 +1,6 @@
+interface:
+  display_name: "CS Paper to Presentation PPT"
+  short_description: "中文论文汇报：译文核对、论文顺序大纲、原图证据、口语讲稿与备用问答"
+  default_prompt: "使用 $cs-paper-to-presentation-ppt，结合论文PDF和我的模板，先核对中文译文与讲解点，再制作论文汇报PPT及逐页备注。"
+policy:
+  allow_implicit_invocation: true

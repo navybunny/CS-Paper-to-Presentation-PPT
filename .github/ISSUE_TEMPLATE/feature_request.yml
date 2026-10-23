@@ -1,0 +1,20 @@
+name: "改进建议 / Feature request"
+description: "建议新的流程、讲稿或工具支持"
+title: "[Feature] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "希望解决什么具体问题？"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "期望怎样改进？"
+    validations:
+      required: true
+  - type: textarea
+    id: example
+    attributes:
+      label: "可公开的例子与使用场景"

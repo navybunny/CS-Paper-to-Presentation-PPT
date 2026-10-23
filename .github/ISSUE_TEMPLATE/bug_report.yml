@@ -1,0 +1,44 @@
+name: "问题报告 / Bug report"
+description: "报告讲解、事实核查、图表、排版或脚本问题"
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "请先脱敏，不要上传API密钥、学生信息、未发表论文或未经授权的完整模板。"
+  - type: input
+    id: environment
+    attributes:
+      label: "运行环境"
+      description: "宿主与版本、操作系统、Python版本（涉及脚本时）"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: "复现步骤或最小提示词"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: "预期效果"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: "实际问题与脱敏示例"
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: "原文定位（涉及事实或讲解时）"
+      description: "公开论文链接、版本、章节、图表号及原文与生成内容的区别"
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: "隐私检查"
+      options:
+        - label: "我已移除账号密钥、个人信息及不宜公开的材料。"
+          required: true
